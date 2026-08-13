@@ -1,1 +1,1 @@
-# Arithematic-Calculatore-Web-App
+# Arithematic-Calculator-Web-App
