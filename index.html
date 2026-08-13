@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ExactCalc</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>ExactCalc</h1>
+        <p class="tag">Exact vs Approximate decimal calculations</p>
+      </header>
+
+      <main>
+        <section class="calculator">
+          <div class="display" id="display">0</div>
+          <div class="indicator" id="indicator">Exact</div>
+          <div class="controls">
+            <input id="input" placeholder="Enter expression or number" />
+            <div class="buttons">
+              <div class="row">
+                <button data-val="7">7</button>
+                <button data-val="8">8</button>
+                <button data-val="9">9</button>
+                <button data-val="/">÷</button>
+              </div>
+              <div class="row">
+                <button data-val="4">4</button>
+                <button data-val="5">5</button>
+                <button data-val="6">6</button>
+                <button data-val="*">×</button>
+              </div>
+              <div class="row">
+                <button data-val="1">1</button>
+                <button data-val="2">2</button>
+                <button data-val="3">3</button>
+                <button data-val="-">−</button>
+              </div>
+              <div class="row">
+                <button data-val="0">0</button>
+                <button data-val=".">.</button>
+                <button id="clear">C</button>
+                <button data-val="+">+</button>
+              </div>
+            </div>
+            <div class="actions">
+                <button id="why-btn">Why did I get this answer?</button>
+                <button id="use-previous">Use Previous (exact)</button>
+                <button id="calculate">Calculate</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="sidebar">
+          <h2>History</h2>
+          <ul id="history"></ul>
+
+          <h2>Explanation</h2>
+          <div id="explanation" class="panel">No calculation yet.</div>
+
+          <h2>Provenance</h2>
+          <div id="provenance" class="panel">—</div>
+        </section>
+      </main>
+      <footer>
+        <small>ExactCalc — demonstrating provenance and precision</small>
+      </footer>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

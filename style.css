@@ -1,0 +1,24 @@
+:root{--bg:#0f1720;--card:#0b1220;--muted:#9aa4b2;--accent:#60a5fa;--glass:rgba(255,255,255,0.03)}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif}
+body{margin:0;background:linear-gradient(180deg,#061226 0%,#0b1220 100%);color:#e6eef6}
+.app{max-width:980px;margin:24px auto;padding:18px}
+header h1{margin:0;font-size:1.6rem}
+.tag{color:var(--muted);margin-top:6px}
+main{display:flex;gap:18px;margin-top:18px}
+.calculator{flex:1;background:var(--card);padding:12px;border-radius:8px}
+.sidebar{width:320px;background:var(--card);padding:12px;border-radius:8px}
+.display{background:var(--glass);padding:18px;border-radius:6px;font-size:1.4rem;text-align:right}
+.indicator{margin-top:8px;color:var(--muted);font-size:0.9rem;text-align:right}
+.controls{margin-top:12px}
+input#input{width:100%;padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.buttons{margin-top:10px}
+.row{display:flex;gap:8px;margin-bottom:8px}
+button{flex:1;padding:10px;border-radius:6px;border:0;background:#102030;color:inherit;cursor:pointer}
+button#clear{background:#3b4252}
+.actions{display:flex;gap:8px;margin-top:10px}
+.actions button{flex:1;padding:10px}
+ul#history{list-style:none;padding:0;margin:0;max-height:320px;overflow:auto}
+ul#history li{padding:8px;border-bottom:1px solid rgba(255,255,255,0.02);cursor:pointer}
+.panel{background:var(--glass);padding:8px;border-radius:6px;margin-top:6px;color:var(--muted);min-height:60px}
+footer{margin-top:14px;color:var(--muted);text-align:center}
+@media (max-width:800px){main{flex-direction:column}.sidebar{width:100%}}
